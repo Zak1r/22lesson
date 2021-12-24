@@ -68,7 +68,8 @@ edtech ()
 nums = [123, 1000, 654, 12, 10093]
 with open('digits.txt', 'w') as wf:
     for num in nums:
-        newNums = ''
-        for i, char in enumerate(num): 
-               
-            wf.write(f'{newNums}\n')
+        digitList = []
+        while num > 0:
+            digit = num % 10
+            num = num // 10
+        digitList
